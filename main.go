@@ -9,6 +9,7 @@ import (
 
 func main() {
 
+	//Calling the app
 	app := app.Start()
 	err := app.Run(os.Args)
 	if err != nil {

@@ -7,6 +7,8 @@ import (
 )
 
 func check(destination string, port string) string {
+
+	//port and destination of the website
 	address := destination + ":" + port
 	timeout := time.Duration(5 * time.Second)
 	conn, err := net.DialTimeout("tcp", address, timeout)
